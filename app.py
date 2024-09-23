@@ -13,34 +13,6 @@ df = df.fillna('')
 def pokemon_to_dict(row):
     return row.to_dict()  # This will now work without errors
 
-# # Function to convert row to dictionary
-# def pokemon_to_dict(row):
-#     print()
-#     return {
-#         'name': row['name'],
-#         'japanese_name': row['japanese_name'],
-#         'pokedex_number': row['pokedex_number'],
-#         'percentage_male': row['percentage_male'],
-#         'type1': row['type1'],
-#         'type2': row['type2'],
-#         'classification': row['classification'],
-#         'height_m': row['height_m'],
-#         'weight_kg': row['weight_kg'],
-#         'capture_rate': row['capture_rate'],
-#         'base_egg_steps': row['base_egg_steps'],
-#         'abilities': row['abilities'],
-#         'experience_growth': row['experience_growth'],
-#         'base_happiness': row['base_happiness'],
-#         'hp': row['hp'],
-#         'attack': row['attack'],
-#         'defense': row['defense'],
-#         'sp_attack': row['sp_attack'],
-#         'sp_defense': row['sp_defense'],
-#         'speed': row['speed'],
-#         'generation': row['generation'],
-#         'is_legendary': row['is_legendary']
-#     }
-
 # READ - Get all Pokémon
 @app.route('/pokemon', methods=['GET'])
 def get_pokemon():
